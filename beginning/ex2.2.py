@@ -36,3 +36,18 @@ print("The first "+num1+" character of '"+long+"' are '"+long[:int(num1)]+"'")
 #replace all the occurences of the first char of the short string in the long string with your name
 name = input("kimi no namae wa? ")
 first_short = short[:1]
+str3=''
+for i in long:
+ if i == first_short:
+  str3 = str3 + name
+ else:
+  str3 = str3 + i
+print("New string is '" +str3+"'")
+#create a new string from all the 3 strings and print how many times the letter A is in that string
+str4 = str1 + str2 + str3 
+print("All the strings create the mega string '" +str4+"'")
+count=0
+for i in str4: 
+ if i == "A":
+  count += 1
+print("The letter 'A' appears in that string "+str(count)+" times")
